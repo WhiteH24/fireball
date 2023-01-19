@@ -48,7 +48,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.FireSource, function (sprite, ot
     otherSprite.destroy()
 })
 // the player is established with 15 lives and 3 seconds to start
-let fireSource: Sprite = null
+let fireSrc: Sprite = null
 let projectile: Sprite = null
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
@@ -76,7 +76,7 @@ info.setLife(15)
 info.startCountdown(3)
 // i changed the duration to make it more of a challenge
 game.onUpdateInterval(1000, function () {
-    fireSource = sprites.create(img`
+    fireSrc = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . 2 2 2 2 2 2 . . 5 . . . . . 
         . . 2 . . . . 2 2 5 . . . . . . 
